@@ -1,101 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy - Masjid Accountant</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Privacy Policy for Masjid Accountant. Learn how Masjid Accountant handles application data, Google Sign-In, Google Drive backups, and user information.">
+<title>Privacy Policy | Masjid Accountant</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap');
+:root{--green:#064c3e;--deep:#063b32;--gold:#b77a18;--ink:#173a36;--muted:#626977;--line:#e7ece9;--cream:#faf9f5}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#f7f9f7;color:var(--ink);font-family:"DM Sans",Arial,sans-serif}
+a{color:inherit}
+header{height:82px;background:rgba(255,255,255,.96);border-bottom:1px solid #e8eeeb;display:flex;align-items:center;position:sticky;top:0;z-index:10;backdrop-filter:blur(12px)}
+.wrap{width:min(1120px,calc(100% - 40px));margin:auto}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:flex;align-items:center;gap:11px;text-decoration:none;color:var(--deep);font:700 27px "Playfair Display",Georgia,serif}
+.brand b{color:var(--gold)}
+.mark{width:42px;height:42px;color:var(--green)}
+.back{display:inline-flex;align-items:center;gap:9px;text-decoration:none;color:white;background:var(--green);padding:12px 19px;border-radius:11px;font-weight:700;font-size:14px;transition:.2s}
+.back:hover{background:#08705a;transform:translateY(-1px)}
+.hero{background:linear-gradient(135deg,#eef6f1,#fffdf8);border-bottom:1px solid var(--line);padding:58px 0 52px;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;width:360px;height:360px;border-radius:50%;right:-120px;top:-190px;background:#dfeee7;opacity:.7}
+.eyebrow{position:relative;z-index:1;font-size:11px;letter-spacing:3px;text-transform:uppercase;font-weight:700;color:var(--green);display:flex;align-items:center;gap:12px}
+.eyebrow:before{content:"";width:42px;height:2px;background:var(--gold)}
+h1{position:relative;z-index:1;font:700 clamp(40px,6vw,58px)/1.05 "Playfair Display",Georgia,serif;color:var(--deep);margin:15px 0 10px}
+.hero p{position:relative;z-index:1;margin:0;color:var(--muted);font-size:16px}
+.updated{display:inline-flex;margin-top:18px;padding:8px 13px;border:1px solid #dbe7e1;background:#fff;border-radius:9px;color:#52635d;font-size:13px}
+main{padding:42px 0 60px}
+.layout{display:grid;grid-template-columns:235px 1fr;gap:34px;align-items:start}
+.toc{position:sticky;top:105px;background:white;border:1px solid var(--line);border-radius:15px;padding:20px;box-shadow:0 8px 24px #173a360b}
+.toc h2{font:700 18px "Playfair Display",Georgia,serif;color:var(--deep);margin:0 0 12px}
+.toc a{display:block;text-decoration:none;color:#68726f;font-size:13px;padding:7px 0;border-bottom:1px solid #f0f2f1}
+.toc a:last-child{border-bottom:0}
+.toc a:hover{color:var(--green)}
+.policy{background:white;border:1px solid var(--line);border-radius:18px;padding:34px 42px;box-shadow:0 10px 30px #173a360b}
+.policy section{padding:0 0 26px;margin:0 0 25px;border-bottom:1px solid #edf0ee}
+.policy section:last-child{border-bottom:0;margin-bottom:0;padding-bottom:4px}
+.policy h2{font:700 25px "Playfair Display",Georgia,serif;color:var(--deep);margin:0 0 10px}
+.policy h2 span{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;background:#e8f3ed;color:var(--green);font:700 13px "DM Sans",Arial,sans-serif;margin-right:8px;vertical-align:2px}
+.policy p{font-size:15px;line-height:1.78;color:#5d6670;margin:0}
+.notice{background:#f0f8f3;border:1px solid #d9eae1;border-left:4px solid var(--green);padding:17px 18px;border-radius:10px;margin-bottom:28px}
+.notice strong{display:block;color:var(--deep);margin-bottom:4px}
+.notice p{font-size:14px;line-height:1.6}
+footer{background:var(--deep);color:#d9e8e2;padding:25px 0}
+.foot{display:flex;align-items:center;justify-content:space-between;gap:20px;font-size:13px}
+.foot a{color:white;text-underline-offset:3px}
+@media(max-width:800px){.layout{grid-template-columns:1fr}.toc{position:static}.toc a{display:inline-block;border:0;margin-right:15px}.policy{padding:27px 23px}.hero{padding:45px 0}.back{padding:10px 14px}.brand{font-size:22px}.mark{width:36px;height:36px}}
+@media(max-width:520px){header{height:70px}.wrap{width:min(100% - 28px,600px)}.brand{font-size:20px}.back{font-size:12px}.back span{display:none}.hero{padding:38px 0}.policy{padding:22px 18px}.policy h2{font-size:22px}.policy p{font-size:14px}.toc{padding:16px}.foot{flex-direction:column;text-align:center}}
+</style>
 </head>
 <body>
-  <main>
-    <h1>Privacy Policy</h1>
+<header>
+<div class="wrap nav">
+<a class="brand" href="index.html" aria-label="Masjid Accountant home">
+<svg class="mark" viewBox="0 0 64 64" fill="currentColor" aria-hidden="true"><path d="M7 53h50v5H7zM12 48V30h5v18zm10 0V26h5v22zm10 0V20h5v28zm10 0V26h5v22zm10 0V30h5v18zM8 25l24-13 24 13v3H8z"/><path d="M24 12a8 8 0 0 1 16 0v2H24zM31 4h2V0h-2zM30 31h4v17h-4z"/></svg>
+<span>Masjid <b>Accountant</b></span>
+</a>
+<a class="back" href="index.html"><span>←</span> Back to Masjid Accountant</a>
+</div>
+</header>
 
-    <p><strong>Masjid Accountant</strong></p>
-    <p>Last updated: September 1, 2026</p>
+<section class="hero">
+<div class="wrap">
+<div class="eyebrow">Privacy &amp; Data Protection</div>
+<h1>Privacy Policy</h1>
+<p>Masjid Accountant</p>
+<div class="updated">Last updated: September 1, 2026</div>
+</div>
+</section>
 
-    <h2>1. About Masjid Accountant</h2>
-    <p>
-      Masjid Accountant is an accounting application designed to help masjids
-      and organizations manage members, contributions, tenants, rent,
-      expenses, transactions, reports, receipts, and accounting records.
-    </p>
+<main>
+<div class="wrap layout">
+<aside class="toc">
+<h2>On this page</h2>
+<a href="#about">1. About Masjid Accountant</a>
+<a href="#access">2. Information We Access</a>
+<a href="#google">3. Google Account &amp; Drive</a>
+<a href="#use">4. How We Use Information</a>
+<a href="#storage">5. Data Storage</a>
+<a href="#sharing">6. Data Sharing</a>
+<a href="#control">7. User Control</a>
+<a href="#security">8. Security</a>
+<a href="#changes">9. Changes</a>
+<a href="#contact">10. Contact</a>
+</aside>
 
-    <h2>2. Information We Access</h2>
-    <p>
-      The application may use information that the user enters into the
-      application, such as member, tenant, transaction, payment, income,
-      expense, and accounting information.
-    </p>
+<article class="policy">
+<div class="notice">
+<strong>Your privacy matters</strong>
+<p>Masjid Accountant is designed to keep accounting information under the user's control. Google Drive backup is optional and is used only when the user chooses to connect their Google account.</p>
+</div>
 
-    <h2>3. Google Account and Google Drive</h2>
-    <p>
-      Masjid Accountant provides an optional Google Drive backup feature.
-      When a user chooses to connect a Google account, the application uses
-      Google Sign-In to authenticate the user's Google account.
-    </p>
+<section id="about">
+<h2><span>1</span>About Masjid Accountant</h2>
+<p>Masjid Accountant is an accounting application designed to help masjids and organizations manage members, contributions, tenants, rent, expenses, transactions, reports, receipts, and accounting records.</p>
+</section>
 
-    <p>
-      The application requests access to Google Drive files created or used
-      by the application for backup purposes. This access is requested using
-      the Google Drive file scope.
-    </p>
+<section id="access">
+<h2><span>2</span>Information We Access</h2>
+<p>The application may use information that the user enters into the application, such as member, tenant, transaction, payment, income, expense, and accounting information.</p>
+</section>
 
-    <p>
-      Google account information and Google Drive access are used only to
-      provide authentication and the requested backup and restore
-      functionality.
-    </p>
+<section id="google">
+<h2><span>3</span>Google Account and Google Drive</h2>
+<p>Masjid Accountant provides an optional Google Drive backup feature. When a user chooses to connect a Google account, the application uses Google Sign-In to authenticate the user's Google account.</p>
+<br>
+<p>The application requests access to Google Drive files created or used by the application for backup purposes. This access is requested using the Google Drive file scope.</p>
+<br>
+<p>Google account information and Google Drive access are used only to provide authentication and the requested backup and restore functionality.</p>
+</section>
 
-    <h2>4. How We Use Information</h2>
-    <p>
-      Information is used to provide accounting, reporting, receipt,
-      backup, restore, and related application functionality.
-    </p>
+<section id="use">
+<h2><span>4</span>How We Use Information</h2>
+<p>Information is used to provide accounting, reporting, receipt, backup, restore, and related application functionality.</p>
+</section>
 
-    <h2>5. Data Storage</h2>
-    <p>
-      Accounting information is stored locally by the application. If the
-      user enables Google Drive backup, selected backup files may be stored
-      in the user's Google Drive.
-    </p>
+<section id="storage">
+<h2><span>5</span>Data Storage</h2>
+<p>Accounting information is stored locally by the application. If the user enables Google Drive backup, selected backup files may be stored in the user's Google Drive.</p>
+</section>
 
-    <h2>6. Data Sharing</h2>
-    <p>
-      We do not sell or rent users' personal information. Information is not
-      shared with third parties except when required to provide functionality
-      requested by the user, such as authentication through Google and
-      storage of requested backup files in Google Drive, or when required
-      by law.
-    </p>
+<section id="sharing">
+<h2><span>6</span>Data Sharing</h2>
+<p>We do not sell or rent users' personal information. Information is not shared with third parties except when required to provide functionality requested by the user, such as authentication through Google and storage of requested backup files in Google Drive, or when required by law.</p>
+</section>
 
-    <h2>7. User Control</h2>
-    <p>
-      Users may choose whether to connect their Google account. Users may
-      also disconnect the Google account from the application.
-    </p>
+<section id="control">
+<h2><span>7</span>User Control</h2>
+<p>Users may choose whether to connect their Google account. Users may also disconnect the Google account from the application.</p>
+</section>
 
-    <h2>8. Security</h2>
-    <p>
-      Reasonable measures are used to protect application data. No method of
-      electronic storage or transmission can be guaranteed to be completely
-      secure.
-    </p>
+<section id="security">
+<h2><span>8</span>Security</h2>
+<p>Reasonable measures are used to protect application data. No method of electronic storage or transmission can be guaranteed to be completely secure.</p>
+</section>
 
-    <h2>9. Changes to This Privacy Policy</h2>
-    <p>
-      This Privacy Policy may be updated from time to time. Any updated
-      version will be published on this page with a revised update date.
-    </p>
+<section id="changes">
+<h2><span>9</span>Changes to This Privacy Policy</h2>
+<p>This Privacy Policy may be updated from time to time. Any updated version will be published on this page with a revised update date.</p>
+</section>
 
-    <h2>10. Contact</h2>
-    <p>
-      For questions about this Privacy Policy or Masjid Accountant, please
-      contact the developer through the contact information associated with
-      the application.
-    </p>
+<section id="contact">
+<h2><span>10</span>Contact</h2>
+<p>For questions about this Privacy Policy or Masjid Accountant, please contact the developer through the contact information associated with the application.</p>
+</section>
 
-    <p>
-      <a href="index.html">Back to Masjid Accountant</a>
-    </p>
-  </main>
+<a class="back" href="index.html">← Back to Masjid Accountant</a>
+</article>
+</div>
+</main>
+
+<footer>
+<div class="wrap foot">
+<span>© <span id="year"></span> Masjid Accountant. All rights reserved.</span>
+<a href="index.html">Masjid Accountant</a>
+</div>
+</footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
 </body>
 </html>
