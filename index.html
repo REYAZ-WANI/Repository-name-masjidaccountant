@@ -1,42 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Masjid Accountant</title>
-  <meta name="description" content="Masjid Accountant is an accounting application for masjids and organizations to manage members, contributions, tenants, rent, expenses, transactions, reports, receipts, and accounting records.">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Masjid Accountant — simple, secure and reliable accounting for masjids and organizations.">
+<title>Masjid Accountant | Simple • Secure • Reliable</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap');
+:root{--green:#064c3e;--deep:#063b32;--gold:#b77a18;--ink:#102f2b;--muted:#626977;--line:#e9eeeb;--cream:#fbfaf6}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:"DM Sans",Arial,sans-serif;background:#fff}a{color:inherit;text-decoration:none}.wrap{width:min(1200px,calc(100% - 48px));margin:auto}
+header{height:82px;display:flex;align-items:center;background:rgba(255,255,255,.94);position:sticky;top:0;z-index:20;border-bottom:1px solid rgba(7,69,56,.06);backdrop-filter:blur(12px)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:12px;white-space:nowrap;font:700 28px "Playfair Display",Georgia,serif;color:var(--deep)}.brand b{color:var(--gold)}.brand-mark{width:43px;height:43px;color:var(--green)}
+.links{display:flex;align-items:center;gap:9px}.links a{font-size:14px;font-weight:600;padding:11px 15px;border-radius:10px}.links a:hover,.links a.active{background:#e8f0ec;color:var(--deep)}.download{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--green);color:white;border-radius:12px;padding:15px 24px;font-weight:700;box-shadow:0 8px 20px #064c3e20;transition:.2s}.download:hover,.primary:hover{background:#08705a;transform:translateY(-2px)}.menu{display:none;background:none;border:0;color:var(--green);font-size:27px}
+.hero{position:relative;overflow:hidden;min-height:500px;background:linear-gradient(90deg,#fcfbf7 0%,#fcfbf7ee 42%,#f3f4ed80 100%),url('https://images.unsplash.com/photo-1564769625905-50e93615e769?auto=format&fit=crop&w=2000&q=85') center/cover}
+.hero:before{content:"";position:absolute;inset:0;opacity:.12;background-image:radial-gradient(circle at 1px 1px,#8d9c8f 1px,transparent 0);background-size:22px 22px;mask-image:linear-gradient(90deg,#000,transparent 75%)}
+.hero-inner{position:relative;display:grid;grid-template-columns:1fr 1.12fr;align-items:center;gap:28px;min-height:500px;padding:48px 0}
+.eyebrow{font-size:12px;letter-spacing:4px;font-weight:700;color:var(--green);text-transform:uppercase;display:flex;align-items:center;gap:13px}.eyebrow:after{content:"";height:2px;width:45px;background:var(--gold);display:block}
+h1,h2,h3{font-family:"Playfair Display",Georgia,serif}h1{font-size:clamp(42px,5.1vw,68px);line-height:1.05;margin:24px 0 14px;letter-spacing:-1.7px;color:var(--deep)}h1 span{color:var(--gold)}.intro{font-size:19px;line-height:1.58;color:#565b65;max-width:510px;margin:0 0 27px}.actions{display:flex;gap:16px;flex-wrap:wrap}.primary,.secondary{display:inline-flex;align-items:center;gap:11px;border-radius:12px;padding:15px 25px;font-weight:700;font-size:16px;transition:.2s}.primary{background:var(--green);color:white}.secondary{border:1.5px solid var(--green);color:var(--deep);background:#ffffffc9}.secondary:hover{background:#e9f2ed}.ico{width:20px;height:20px;display:inline-block}
+.mock-wrap{position:relative;display:flex;justify-content:center;align-items:center;padding:12px 0}.laptop{width:min(100%,630px);position:relative;filter:drop-shadow(0 24px 24px #10251f40)}.screen{background:#111;border:8px solid #17191a;border-bottom-width:13px;border-radius:17px 17px 8px 8px;padding:9px 9px 0;overflow:hidden;aspect-ratio:1.55}.app{height:100%;background:#fff;display:grid;grid-template-columns:105px 1fr;font-size:9px}.app-side{background:#034d3d;color:#fff;padding:12px 9px}.app-logo{font-weight:700;font-size:10px;margin-bottom:18px}.side-item{padding:8px 5px;border-radius:4px;margin:2px 0}.side-item.sel{background:#fff;color:#07513f}.app-main{padding:12px 12px 8px;overflow:hidden}.app-top{height:23px;background:#f8faf9;display:flex;justify-content:space-between;align-items:center;color:#52615d;font-size:8px;margin:-12px -12px 10px;padding:0 12px}.app-main h4{margin:0 0 9px;font-size:13px}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}.stat{padding:9px 6px;border-radius:6px;background:#eaf7f1;color:#1d6e53}.stat:nth-child(2){background:#fff0f0;color:#b34d4d}.stat:nth-child(3){background:#edf5ff;color:#3976b4}.stat:nth-child(4){background:#f3efff;color:#7353ae}.stat small{display:block;color:#68736f;font-size:7px}.stat strong{font-size:10px;color:#203a34}.panels{display:grid;grid-template-columns:1.1fr 1fr;gap:8px;margin-top:9px}.panel{border:1px solid #edf0ee;border-radius:6px;padding:8px;min-height:120px}.panel b{font-size:9px}.bars{height:78px;display:flex;align-items:end;justify-content:space-around;border-bottom:1px solid #e6ece8;margin-top:5px;padding:0 8px}.bar{width:9%;background:#20b879;border-radius:2px 2px 0 0}.bar:nth-child(even){background:#f18c8c}.rows{font-size:7px;color:#50615a}.rows div{padding:7px 0;border-bottom:1px solid #eef1ef;display:flex;justify-content:space-between}.base{height:14px;background:linear-gradient(#c9cccd,#777d80 55%,#d9dcdd);width:110%;margin-left:-5%;border-radius:0 0 50% 50%}
+.features{padding:34px 0 26px;text-align:center}.section-eyebrow{justify-content:center}.section-eyebrow:before{content:"";height:1px;width:55px;background:#c99b51}.section-eyebrow:after{height:1px;width:55px}.features h2{font-size:36px;margin:10px 0 6px;color:var(--deep)}.sub{color:#697080;font-size:16px;margin:0 0 25px}.feature-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}.feature{border:1px solid #edf0ef;border-radius:15px;padding:18px 15px 17px;box-shadow:0 7px 22px #152b2410;transition:.2s}.feature:hover{transform:translateY(-5px);box-shadow:0 14px 30px #152b2418}.bubble{width:66px;height:66px;border-radius:50%;display:grid;place-items:center;margin:0 auto 9px}.bubble svg{width:31px;height:31px}.bubble.green{background:#e2f5eb;color:#087452}.bubble.blue{background:#e3f1ff;color:#0876bd}.bubble.gold{background:#fff0cc;color:#b77a18}.bubble.purple{background:#f0e8ff;color:#7041c6}.bubble.red{background:#ffe0e0;color:#a41e27}.feature h3{font:700 16px "DM Sans",Arial;margin:7px 0 8px;color:#173a36}.feature p{font-size:14px;line-height:1.5;color:#626979;margin:0}
+.backup{background:linear-gradient(110deg,#f1f8f3,#fbfcf8);padding:25px 0 29px;position:relative;overflow:hidden}.backup-inner{display:grid;grid-template-columns:210px 1fr 230px;gap:30px;align-items:center}.drive-art{height:135px;display:grid;place-items:center;position:relative}.cloud{width:150px;height:64px;border-radius:45px;background:linear-gradient(145deg,#16a77d,#087451);position:relative;box-shadow:0 14px 24px #08745135}.cloud:before,.cloud:after{content:"";position:absolute;background:inherit;border-radius:50%}.cloud:before{width:78px;height:78px;left:28px;top:-34px}.cloud:after{width:58px;height:58px;right:20px;top:-18px}.drive-triangle{position:absolute;z-index:1;left:50%;top:50%;transform:translate(-50%,-50%);width:48px;height:48px}.backup-copy .eyebrow{font-size:10px;letter-spacing:3px}.backup-copy h2{font-size:30px;margin:7px 0 5px;color:var(--deep)}.backup-copy p{font-size:14px;line-height:1.6;color:#626979;margin:0;max-width:700px}.privacy{text-align:center}.privacy .download{width:100%;padding:13px}.privacy p{font-size:13px;line-height:1.5;color:#697080;margin:10px 0 0}
+footer{background:#063b32;color:#d9e8e2;padding:23px 0}.foot{display:flex;justify-content:space-between;align-items:center;gap:20px;font-size:13px}.foot a{color:white;text-decoration:underline;text-underline-offset:3px}
+@media(max-width:950px){.links{gap:0}.links a{padding:10px 9px;font-size:13px}.brand{font-size:23px}.hero-inner{grid-template-columns:1fr 1fr}.feature-grid{grid-template-columns:repeat(3,1fr)}.backup-inner{grid-template-columns:150px 1fr 190px}}
+@media(max-width:700px){header{height:70px}.wrap{width:min(100% - 32px,560px)}.brand{font-size:21px}.brand-mark{width:35px}.menu{display:block}.links{display:none;position:absolute;top:69px;left:0;right:0;background:white;padding:12px 20px 18px;box-shadow:0 12px 20px #00000012;flex-direction:column;align-items:stretch}.links.open{display:flex}.links a{padding:12px}.nav>.download{display:none}.hero-inner{grid-template-columns:1fr;gap:8px;padding:45px 0 25px}.hero{background-position:60% center}.intro{font-size:17px}.mock-wrap{padding:8px 0 15px}.features h2{font-size:29px}.feature-grid{grid-template-columns:repeat(2,1fr)}.feature{padding:16px 11px}.feature p{font-size:13px}.backup-inner{grid-template-columns:1fr;text-align:center;gap:10px}.drive-art{height:105px}.backup-copy .eyebrow{justify-content:center}.backup-copy .eyebrow:after{display:none}.backup-copy h2{font-size:27px}.privacy{max-width:260px;margin:5px auto 0}.foot{flex-direction:column;text-align:center}.app{grid-template-columns:75px 1fr}.app-side{padding:8px 5px}.side-item{font-size:7px}.screen{border-width:6px;border-bottom-width:10px}}
+@media(max-width:420px){.feature-grid{grid-template-columns:1fr}.feature{max-width:330px;width:100%;margin:auto}.actions{gap:10px}.primary,.secondary{padding:13px 16px;font-size:14px}h1{font-size:43px}.stats{gap:3px}.stat{padding:7px 3px}.stat strong{font-size:8px}.panels{grid-template-columns:1fr 1fr}.panel{min-height:95px}.rows div{padding:5px 0}}
+</style>
 </head>
 <body>
-  <main>
-    <h1>Masjid Accountant</h1>
-
-    <p>
-      Masjid Accountant is an accounting application designed to help
-      masjids and organizations manage their accounting records.
-    </p>
-
-    <h2>What Masjid Accountant does</h2>
-
-    <ul>
-      <li>Manage member names and contribution/payment records</li>
-      <li>Manage tenants, property details, rent and payment records</li>
-      <li>Record income and expense transactions</li>
-      <li>Generate accounting reports and receipts</li>
-      <li>Create backups of accounting data</li>
-    </ul>
-
-    <h2>Google Drive Backup</h2>
-
-    <p>
-      Masjid Accountant can allow a user to sign in with their Google account
-      and use Google Drive to store and manage the application's backup files.
-      The application requests only the Google Drive file access needed for
-      these backup operations.
-    </p>
-
-    <p>
-      <a href="privacy-policy.html">Privacy Policy</a>
-    </p>
-  </main>
-</body>
-</html>
+<header>
+ <div class="wrap nav">
+  <a class="brand" href="#home" aria-label="Masjid Accountant home">
+   <svg class="brand-mark" viewBox="0 0 64 64" fill="currentColor" aria-hidden="true"><path d="M7 53h50v5H7zM12 48V30h5v18zm10 0V26h5v22zm10 0V20h5v28zm10 0V26h5v22zm10 0V30h5v18zM8 25l24-13 24 13v3H8z"/><path d="M24 12a8 8 0 0 1 16 0v2H24zM31 4h2V0h-2zM30 31h4v17h-4z"/></svg>
+   <span>Masjid <b>Accountant</b></span>
+  </a>
+  <button class="menu" aria-label="Toggle navigation" onclick="document.querySelector('.links').classList.toggle('open')">☰</button>
+  <nav class="links" aria-label="Main navigation">
+   <a class="active" href="#home">Home</a><a href="#features">Features</a><a href="#backup">Backup</a><a href="https://masjidaccountant.com/privacy-policy.html">Privacy Policy</a><a href="#about">About</a><a href="mailto:info@masjidaccountant.com">Contact</a>
+  </nav>
+  <a class="download" href="#download"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="M12 3v12m0 0 5-5m-5 5-5-5M4 17v3h16v-3"/></svg>Download</a>
+ </div>
+</header>
+<main>
+<section class="hero" id="home"><div class="wrap hero-inner">
+ <div>
+  <div class="eyebrow">Simple&nbsp; • &nbsp;Secure&nbsp; • &nbsp;Reliable</div>
+  <h1>Masjid <span>Accountant</span></h1>
+  <p class="intro">A complete accounting application designed to help masjids and organizations manage their accounting records with ease and transparency.</p>
+  <div class="actions">
+   <a class="primary" href="#features"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><circle cx="12" cy="12" r="3"/><path d="m19.4 15 .1.1 1.4 1.1-1.5 2.6-1.7-.7a8 8 0 0 1-1.8 1l-.3 1.8h-3l-.3-1.8a8 8 0 0 1-1.8-1l-1.7.7-1.5-2.6 1.4-1.1a7 7 0 0 1 0-2l-1.4-1.1 1.5-2.6 1.7.7a8 8 0 0 1 1.8-1l.3-1.8h3l.3 1.8a8 8 0 0 1 1.8 1l1.7-.7 1.5 2.6-1.4 1.1a7 7 0 0 1 0 2Z"/></svg>Learn More</a>
+   <a class="secondary" href="#download"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="M12 3v12m0 0 5-5m-5 5-5-5M4 17v3h16v-3"/></svg>Download Now</a>
+  </div>
+ </div>
+ <div class="mock-wrap" aria-label="Illustration of the Masjid Accountant dashboard">
+  <div class="laptop"><div class="screen"><div class="app">
+   <aside class="app-side"><div class="app-logo">▣ Masjid Accountant</div><div class="side-item sel">⌂ &nbsp; Dashboard</div><div class="side-item">⇄ &nbsp; Transactions</div><div class="side-item">♟ &nbsp; Members</div><div class="side-item">⌂ &nbsp; Tenants</div><div class="side-item">▤ &nbsp; Reports</div><div class="side-item">▣ &nbsp; Accounts</div><div class="side-item">☁ &nbsp; Backup</div><div class="side-item">⚙ &nbsp; Settings</div></aside>
+   <div class="app-main"><div class="app-top"><b>Dashboard</b><span>Jamia Masjid Zakura　●</span></div><h4>Dashboard</h4>
+    <div class="stats"><div class="stat"><small>Total Income</small><strong>₹ 1,25,000</strong></div><div class="stat"><small>Total Expenses</small><strong>₹ 85,000</strong></div><div class="stat"><small>Bank Balance</small><strong>₹ 40,000</strong></div><div class="stat"><small>Members</small><strong>120</strong></div></div>
+    <div class="panels"><div class="panel"><b>Income &amp; Expenses</b><div class="bars"><i class="bar" style="height:48%"></i><i class="bar" style="height:35%"></i><i class="bar" style="height:65%"></i><i class="bar" style="height:49%"></i><i class="bar" style="height:73%"></i><i class="bar" style="height:57%"></i><i class="bar" style="height:81%"></i><i class="bar" style="height:61%"></i><i class="bar" style="height:76%"></i></div></div><div class="panel"><b>Recent Transactions</b><div class="rows"><div>Member Contribution <b>₹ 500</b></div><div>Rent Income <b>₹ 10,000</b></div><div>Electricity Bill <b>₹ 2,500</b></div><div>General Donation <b>₹ 1,000</b></div><div>Imam Salary <b>₹ 8,000</b></div></div></div></div>
+   </div></div></div><div class="base"></div></div>
+ </div>
+</div></section>
+<section class="features" id="features"><div class="wrap">
+ <div class="eyebrow section-eyebrow">Key Features</div><h2>What Masjid Accountant does</h2><p class="sub">Manage all your masjid accounting needs in one simple and easy to use application.</p>
+ <div class="feature-grid">
+  <article class="feature"><div class="bubble green"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm0 2c-2.7 0-6 1.3-6 3v2h12v-2c0-1.7-3.3-3-6-3Zm8 0c-.4 0-.8 0-1.2.1 1.3.8 2.2 1.8 2.2 2.9v2h5v-2c0-1.7-3.3-3-6-3Z"/></svg></div><h3>Member Management</h3><p>Manage member names and contribution/payment records.</p></article>
+  <article class="feature"><div class="bubble blue"><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 3 10 8h-3v10h-6v-6h-2v6H5V11H2l10-8Zm0 2.6L6.5 10H8v9h1v-6h6v6h1v-9h1.5L12 5.6Z"/></svg></div><h3>Tenant Management</h3><p>Manage tenants, property details, rent and payment records.</p></article>
+  <article class="feature"><div class="bubble gold"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 2h9l5 5v15H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Zm8 2v4h4M8 12h8v2H8zm0 4h8v2H8z"/></svg></div><h3>Income &amp; Expense</h3><p>Record income and expense transactions with proper accounting.</p></article>
+  <article class="feature"><div class="bubble purple"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 19h3V9H3v10Zm7 0h3V4h-3v15Zm7 0h3v-7h-3v7Z"/></svg></div><h3>Accounting Reports</h3><p>Generate detailed accounting reports and receipts.</p></article>
+  <article class="feature"><div class="bubble red"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C7 2 3 3.8 3 6s4 4 9 4 9-1.8 9-4-4-4-9-4Zm-9 7v4c0 2.2 4 4 9 4s9-1.8 9-4V9c-1.8 1.9-5.5 3-9 3S4.8 10.9 3 9Zm0 7v2c0 2.2 4 4 9 4s9-1.8 9-4v-2c-1.8 1.9-5.5 3-9 3s-7.2-1.1-9-3Z"/></svg></div><h3>Data Backup</h3><p>Create backups of your accounting data securely.</p></article>
+ </div>
+</div></section>
+<section class="backup" id="backup"><div class="wrap backup-inner">
+ <div class="drive-art"><div class="cloud"><svg class="drive-triangle" viewBox="0 0 48 48"><path fill="#fff" d="M16 5h10l17 29H32z"/><path fill="#34a853" d="M16 5 1 31l5 9L23 13z"/><path fill="#4285f4" d="M6 40h31l6-6H10z"/><path fill="#fbbc04" d="M26 5h-10l16 29h11z"/></svg></div></div>
+ <div class="backup-copy"><div class="eyebrow">Secure &amp; Convenient</div><h2>Google Drive Backup</h2><p>Masjid Accountant can allow a user to sign in with their Google account and use Google Drive to store and manage the application's backup files. The application requests only the Google Drive file access needed for these backup operations.</p></div>
+ <div class="privacy"><a class="download" href="https://masjidaccountant.com/privacy-policy.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 2 4 5v6c0 5 3.4 9 8 11 4.6-2 8-6 8-11V5l-8-3Z"/><path d="m9 12 2 2 4-5"/></svg>Privacy Policy</a><p>Learn how we protect your data and use Google Drive.</p></div>
+ </div></section>
+<section id="about" style="padding:30px 0;text-align:center"><div class="wrap"><h2 style="font-size:26px;color:var(--deep);margin:0 0 8px">Simple accounting. Clear records. Greater confidence.</h2><p style="color:var(--muted);margin:0">Built to support transparent financial management for masjids and community organizations.</p></div></section>
+</main>
+<footer id="download"><div class="wrap foot"><span>© <span id="year"></span> Masjid Accountant. All rights reserved.</span><span>Simple • Secure • Reliable</span><a href="https://masjidaccountant.com/privacy-policy.html">Privacy Policy</a></div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();document.querySelectorAll('.links a').forEach(a=>a.addEventListener('click',()=>document.querySelector('.links').classList.remove('open')));</script>
+</body></html>
