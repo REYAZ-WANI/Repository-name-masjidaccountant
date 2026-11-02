@@ -57,6 +57,39 @@ footer{background:#063b32;color:#d9e8e2;padding:23px 0}.foot{display:flex;justif
 @media(max-width:950px){.links{gap:0}.links a{padding:10px 9px;font-size:13px}.brand{font-size:23px}.hero-inner{grid-template-columns:1fr 1fr}.feature-grid{grid-template-columns:repeat(3,1fr)}.backup-inner{grid-template-columns:150px 1fr 190px}.app-grid{grid-template-columns:1fr}}
 @media(max-width:700px){header{height:70px}.wrap{width:min(100% - 32px,560px)}.brand{font-size:21px}.brand-mark{width:35px}.menu{display:block}.links{display:none;position:absolute;top:69px;left:0;right:0;background:white;padding:12px 20px 18px;box-shadow:0 12px 20px #00000012;flex-direction:column;align-items:stretch}.links.open{display:flex}.links a{padding:12px}.nav>.download{display:none}.hero-inner{grid-template-columns:1fr;gap:8px;padding:45px 0 25px}.hero{background-position:60% center}.intro{font-size:17px}.mock-wrap{padding:8px 0 15px}.features h2,.apps h2{font-size:29px}.feature-grid{grid-template-columns:repeat(2,1fr)}.feature{padding:16px 11px}.feature p{font-size:13px}.backup-inner{grid-template-columns:1fr;text-align:center;gap:10px}.drive-art{height:105px}.backup-copy .eyebrow{justify-content:center}.backup-copy .eyebrow:after{display:none}.backup-copy h2{font-size:27px}.privacy{max-width:260px;margin:5px auto 0}.foot{flex-direction:column;text-align:center}.app-card{padding:21px;align-items:flex-start}.contact-grid{grid-template-columns:1fr;max-width:600px}.contact-section .section-heading h2{font-size:30px}}
 @media(max-width:420px){.feature-grid{grid-template-columns:1fr}.feature{max-width:330px;width:100%;margin:auto}.actions{gap:10px}.primary,.secondary{padding:13px 16px;font-size:14px}h1{font-size:43px}.stats{gap:3px}.stat{padding:7px 3px}.stat strong{font-size:8px}.panels{grid-template-columns:1fr 1fr}.panel{min-height:95px}.rows div{padding:5px 0}.contact-card{padding:20px}}
+
+
+/* NAVY BLUE & GOLD BRAND THEME */
+:root{--green:#102b50;--deep:#081b34;--gold:#d4af37;--ink:#17263b;--muted:#5e6878;--line:#e7dfc9;--cream:#fbf8ef}
+body{color:var(--ink);background:#fff}
+header{background:rgba(8,27,52,.97);border-bottom:1px solid #d4af3740}
+.brand{color:#fff}.brand b{color:var(--gold)}.brand-mark{color:var(--gold)}
+.links a{color:#fff}.links a:hover,.links a.active{background:#d4af3722;color:var(--gold)}
+.download,.primary,.app-button{background:#102b50;color:var(--gold);border:1px solid var(--gold)}
+.download:hover,.primary:hover,.app-button:hover{background:#1b3d68;color:#ffe28a}
+.menu{color:var(--gold)}
+.hero{background:linear-gradient(110deg,rgba(8,27,52,.97),rgba(16,43,80,.91) 58%,rgba(8,27,52,.76)),url('https://images.unsplash.com/photo-1564769625905-50e93615e769?auto=format&fit=crop&w=2000&q=85') center/cover}
+.hero:before{opacity:.09;background-image:radial-gradient(circle at 1px 1px,#e3c66c 1px,transparent 0)}
+.eyebrow{color:var(--gold)}h1{color:#fff}h1 span{color:var(--gold)}
+.intro{color:#e5eaf2}.secondary{border:1.5px solid var(--gold);color:var(--gold);background:#102b50}.secondary:hover{background:#1b3d68;color:#ffe28a}
+.app-side{background:#102b50}.side-item.sel{background:#d4af37;color:#081b34}
+.app-top{background:#f7f3e8}.stat{background:#f8f2df;color:#725711}.stat:nth-child(2){background:#f6e9e6;color:#8b4036}.stat:nth-child(3){background:#e9eef7;color:#294b7a}.stat:nth-child(4){background:#f1ebf7;color:#654b83}
+.bar{background:#c69b2d}.bar:nth-child(even){background:#7188a8}
+.features{background:#fbf8ef}.section-eyebrow:before,.section-eyebrow:after{background:var(--gold)}
+.features h2,.apps h2,.backup-copy h2,.contact-section .section-heading h2{color:#102b50}
+.feature{background:#fffdf8;border-color:#e8dfc9}.feature:hover{border-color:var(--gold)}
+.bubble.green,.bubble.blue,.bubble.gold,.bubble.purple,.bubble.red{background:#f4edda;color:#9a741c}
+.feature h3,.app-info h3{color:#102b50}
+.backup{background:linear-gradient(110deg,#102b50,#18395f)}.backup-copy .eyebrow{color:var(--gold)}.backup-copy h2{color:#fff}.backup-copy p{color:#e2e8f0}
+.privacy p{color:#e2e8f0}.cloud{background:linear-gradient(145deg,#d4af37,#a77d19);box-shadow:0 14px 24px #00000030}
+.apps{background:#fff}.app-card{background:#fbf8ef;border-color:#e5dcc4}.app-card:hover{border-color:var(--gold)}
+.app-icon,.app-icon.android{background:#eee6d1;color:#8b6817}.app-meta span{color:#263b59;background:#eee8d8}
+.app-kicker,.contact-section .section-kicker,.contact-label{color:#a27b18}
+.contact-section{background:#f5f2e9}.contact-card{border-color:#e6dcc5}.contact-card:hover{border-color:var(--gold)}
+.contact-icon,.whatsapp-card .contact-icon{background:#eee8d8;color:#8b6817}.contact-card h3{color:#102b50}
+footer{background:#081b34;color:#f1ead7;border-top:2px solid var(--gold)}footer .foot a{color:var(--gold)}
+@media(max-width:700px){.links{background:#081b34}.links a{color:#fff}.links a:hover,.links a.active{background:#d4af3722;color:var(--gold)}}
+
 </style>
 </head>
 <body>
@@ -117,8 +150,8 @@ footer{background:#063b32;color:#d9e8e2;padding:23px 0}.foot{display:flex;justif
 <div class="app-kicker">Desktop Application</div>
 <h3>Masjid Accounting for Windows</h3>
 <p>Complete accounting software for members, tenants, income, expenses, cash, bank, reports, backups and more.</p>
-<div class="app-meta"><span>Windows</span><span>Installer</span><span>14.6 MB</span></div>
-<a class="app-button" href="https://github.com/REYAZ-WANI/Repository-name-masjidaccountant/releases/download/v1.5.0/MasjidAccounting_Setup.exe"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="M12 3v12m0 0 5-5m-5 5-5-5M4 17v3h16v-3"/></svg>Download for Windows</a>
+<div class="app-meta"><span>Windows</span><span>Installer</span><span>37.1 MB</span></div>
+<a class="app-button" href="https://github.com/REYAZ-WANI/Repository-name-masjidaccountant/releases/download/v1.5.0/masjid_accounting.exe"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="M12 3v12m0 0 5-5m-5 5-5-5M4 17v3h16v-3"/></svg>Download for Windows</a>
 </div>
 </div>
 
@@ -128,7 +161,7 @@ footer{background:#063b32;color:#d9e8e2;padding:23px 0}.foot{display:flex;justif
 <div class="app-kicker">Mobile Application</div>
 <h3>Masjid Accounting for Android</h3>
 <p>Manage your masjid accounting records on Android with the same simple and reliable workflow.</p>
-<div class="app-meta"><span>Android</span><span>APK</span><span>64 MB</span></div>
+<div class="app-meta"><span>Android</span><span>APK</span><span>68.4 MB</span></div>
 <a class="app-button" href="https://github.com/REYAZ-WANI/Repository-name-masjidaccountant/releases/download/v1.5.0/app-release.apk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="M12 3v12m0 0 5-5m-5 5-5-5M4 17v3h16v-3"/></svg>Download APK</a>
 </div>
 </div>
